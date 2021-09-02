@@ -1,0 +1,282 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh; }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: 0.4; }
+  to {
+    opacity: 1; } }
+
+.footer {
+  min-width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  bottom: 0; }
+
+.header nav {
+  max-width: 75%;
+  color: #333;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 3rem;
+  margin: 0 auto; }
+  .header nav .menu-icon {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000; }
+    .header nav .menu-icon:visited {
+      color: #000; }
+  @media (max-width: 400px) {
+    .header nav {
+      padding: 1.5rem 0rem; } }
+
+.main {
+  background-color: #fff; }
+  .main__content {
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 100vh;
+    color: #000;
+    padding: 2rem;
+    font-size: 2rem; }
+    .main__content section {
+      margin: 6rem 0; }
+      .main__content section:first-child {
+        margin-top: 1rem; }
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row; }
+  .info_text {
+    max-width: 65%;
+    line-height: 1.5;
+    color: #777; }
+  .info_logo {
+    max-width: 30%;
+    padding: 2rem; }
+  @media (max-width: 400px) {
+    .info {
+      flex-flow: column; }
+      .info_text, .info_logo {
+        max-width: 100%;
+        text-align: center; } }
+
+.badge-collection {
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+  justify-content: space-between; }
+  .badge-collection__badge {
+    min-height: 12rem;
+    background-color: #061c2c;
+    width: 100%;
+    margin: 1rem;
+    padding: 1.5rem;
+    transition: all 0.2s;
+    cursor: pointer; }
+    .badge-collection__badge:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+      background-color: #061c2c; }
+    .badge-collection__badge-icon {
+      color: #1e7bae;
+      font-size: 9rem;
+      margin-top: -2.5rem; }
+    .badge-collection__badge-text {
+      color: #fff;
+      max-width: 60%; }
+  .badge-collection:hover .badge-collection__badge:not(:hover) {
+    transform: scale(0.9); }
+  @media (max-width: 400px) {
+    .badge-collection {
+      flex-flow: column; } }
+
+.banner-collection {
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+  justify-content: space-between; }
+  @media (max-width: 400px) {
+    .banner-collection {
+      flex-flow: column; } }
+  .banner-collection__banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #244ac2;
+    padding: 0.5rem;
+    transition: all 0.2s;
+    cursor: pointer; }
+    .banner-collection__banner:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+      background-color: #061c2c; }
+    .banner-collection__banner-text {
+      text-transform: uppercase;
+      font-weight: 700;
+      padding-left: 1rem; }
+    .banner-collection__banner-icon {
+      color: #93caf2;
+      font-size: 2rem; }
+
+.button_up {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  transition: all 0.4s;
+  text-decoration: none;
+  color: #244ac2;
+  border: 1px solid #244ac2;
+  box-shadow: 0 2rem 4rem rgba(255, 255, 255, 0.15); }
+  .button_up:link, .button_up:visited {
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 3rem;
+    transition: all 0.4s; }
+  .button_up:hover {
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    border: 1px solid #fff;
+    transform: translateY(-5px); }
+  .button_up:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto; }
+
+/* Hide the images by default */
+.mySlides {
+  display: none; }
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  height: auto; }
+
+/* Next & previous buttons */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5rem;
+  transform: translateY(-50%);
+  padding-right: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 15rem;
+  transition: 0.6s ease;
+  user-select: none; }
+  @media (max-width: 400px) {
+    .next {
+      font-size: 2rem;
+      margin-top: 0; } }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* The dots/bullets/indicators */
+.dot-collection {
+  position: absolute;
+  bottom: 15px;
+  right: 15px; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active,
+.dot:hover {
+  background-color: #717171; }
+
+.slider-banner {
+  position: absolute;
+  transform: translate(-15%, -50%);
+  top: 50%;
+  background-color: #244ac2;
+  color: #fff;
+  padding: 4rem;
+  max-width: 77rem;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 11rem; }
+  @media (max-width: 400px) {
+    .slider-banner {
+      display: none; } }
+
+.slider-banner--right {
+  position: absolute;
+  transform: translate(100%, 50%);
+  top: 25%;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 4rem;
+  min-width: 15rem;
+  max-width: 77rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  min-height: 11rem; }
+  @media (max-width: 400px) {
+    .slider-banner--right {
+      display: none; } }

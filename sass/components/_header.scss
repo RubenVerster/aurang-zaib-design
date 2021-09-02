@@ -1,0 +1,24 @@
+.header {
+  nav {
+    max-width: 75%;
+    color: $color-grey-dark;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 3rem;
+    margin: 0 auto;
+
+    .menu-icon {
+      text-decoration: none;
+      font-size: 3rem;
+      color: $color-black;
+      &:visited {
+        color: $color-black;
+      }
+    }
+    @media (max-width: 400px) {
+      padding: 1.5rem 0rem;
+    }
+  }
+}
