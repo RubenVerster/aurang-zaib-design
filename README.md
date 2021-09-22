@@ -1,5 +1,5 @@
 To run this project locally, clone it with the following:
-**git clone https://github.com/RubenVerster/visio-homepage.git**
+**git clone https://github.com/RubenVerster/aurang-zaib-design.git**
 
 once the repo is cloned, cd into it and run:
 **npm i**
