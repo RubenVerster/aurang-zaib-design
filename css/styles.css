@@ -1,6 +1,9 @@
 .u-ml-small {
   margin-left: 2rem; }
 
+.u-ml-poes-big {
+  margin-left: 2rem; }
+
 *,
 *::after,
 *::before {
@@ -189,3 +192,48 @@ a {
         bottom: 1rem;
         display: flex;
         align-items: center; }
+
+.section-mobile {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f8fd;
+  margin: 10rem 0; }
+  .section-mobile__content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; }
+    .section-mobile__content__left {
+      position: relative;
+      max-width: 40%;
+      text-align: left;
+      height: 40%; }
+      .section-mobile__content__left-heading {
+        font-size: 3rem; }
+      .section-mobile__content__left-line {
+        width: 30%;
+        border-bottom: 3px solid #008aca;
+        margin: 1rem 0 2rem 0.5rem; }
+      .section-mobile__content__left-text {
+        font-size: 1.5rem;
+        line-height: 1.3; }
+      .section-mobile__content__left-logos {
+        position: absolute;
+        bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly; }
+        .section-mobile__content__left-logos a {
+          display: block;
+          height: 4.2rem;
+          max-width: 20rem; }
+      .section-mobile__content__left__right {
+        height: auto; }
+    .section-mobile__content img {
+      height: 120%;
+      transform: translateY(0%); }
