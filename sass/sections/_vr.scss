@@ -1,0 +1,43 @@
+.section-vr {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 0;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+      height: 80%;
+      img {
+        height: 90%;
+      }
+    }
+    &__right {
+      border: 2px solid red;
+      max-width: 40%;
+      text-align: left;
+      height: 50vh;
+
+      &-heading {
+        font-size: 3rem;
+      }
+
+      &-line {
+        width: 30%;
+        border-bottom: 3px solid $color-primary-dark;
+        margin: 1rem 0 2rem 0.5rem;
+      }
+
+      &-text {
+        font-size: 1.5rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $color-grey-dark;
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 2rem rgba($color: $color-grey-light, $alpha: 0.5);
+  }
+  &--pill {
+    background-color: $color-primary;
+    border: none;
+    color: $color-white;
+    padding: 1.5rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 900px;
+  }
+}
