@@ -127,6 +127,24 @@ a {
 .dot:hover {
   background-color: #717171; }
 
+.card {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 3rem; }
+  .card_cta {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333; }
+
 .header {
   background-color: #5aa6c8;
   height: 100vh;
@@ -312,7 +330,6 @@ a {
               width: 50px;
               height: 50px; }
           .section-reviews__collection .review .review-card__person-details {
-            margin-left: 1rem;
             text-align: left; }
             .section-reviews__collection .review .review-card__person-details-name {
               color: rgba(0, 0, 0, 0.7);
@@ -320,3 +337,36 @@ a {
               font-weight: 900; }
             .section-reviews__collection .review .review-card__person-details-title {
               font-size: 1.5rem; }
+
+.footer {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
+  .footer__small-text {
+    color: #008aca;
+    font-size: 1.3rem;
+    margin-bottom: 2rem; }
+  .footer__companies {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0; }
+  .footer__bottom {
+    position: absolute;
+    bottom: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between; }
+    .footer__bottom-copy {
+      font-size: 1.3rem; }
+    .footer__bottom-social {
+      display: flex; }
+      .footer__bottom-social p {
+        margin: 0 2rem;
+        font-size: 3rem; }

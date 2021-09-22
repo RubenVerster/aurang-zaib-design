@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__small-text {
+    color: $color-primary-dark;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__companies {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 1rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+    &-copy {
+      font-size: 1.3rem;
+    }
+
+    &-social {
+      display: flex;
+      p {
+        margin: 0 2rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}
