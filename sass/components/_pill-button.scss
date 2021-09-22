@@ -1,0 +1,19 @@
+.pill-button {
+  background-color: $color-primary;
+  border: none;
+  color: $color-white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 900px;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out;
+
+  &:hover {
+    color: $color-grey-dark;
+    transform: translateY(-5px);
+  }
+}

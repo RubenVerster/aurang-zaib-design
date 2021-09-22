@@ -69,6 +69,41 @@ a {
   .navbar__link:hover {
     color: #333; }
 
+.pill-button {
+  background-color: #5aa6c8;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 900px;
+  font-weight: 700;
+  transition: all 0.4s ease-in-out; }
+  .pill-button:hover {
+    color: #333;
+    transform: translateY(-5px); }
+
+.card {
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  padding: 3rem; }
+  .card_cta {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #333; }
+
 .header {
   background-color: #5aa6c8;
   height: 100vh;
