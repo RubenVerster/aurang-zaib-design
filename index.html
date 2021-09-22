@@ -4,150 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Damn you look good today! Yeah you ;P</title>
-
+    <title>TekTal - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header" id="header">
-      <nav>
-        <a href="#" class="header__logo">
-          <img src="./img/logo.png" alt="Logo" width="200px" height="51px" />
-        </a>
-        <a class="menu-icon" href="#">&#9776;</a>
+    <header class="header">
+      <nav class="navbar">
+        <div class="navbar__content">
+          <div class="navbar__left">
+            <a id="hero" class="navbar__link" href="#">&copy; TeckTal</a>
+          </div>
+
+          <div class="navbar__right">
+            <a class="navbar__link" href="#">Something</a>
+            <a class="navbar__link" href="#">Something</a>
+            <a class="navbar__link" href="#">Something</a>
+            <a class="navbar__link" href="#">Something</a>
+            <a class="navbar__link" href="#">Something</a>
+          </div>
+        </div>
       </nav>
+
+      <div class="header__hero">
+        <div class="header__hero-headings">
+          <h1 class="header__hero-headings--primary">
+            TeckTal Certificate <span>Verifier</span>
+          </h1>
+          <h2 class="header__hero-headings--secondary">
+            Verification backed by Blockchain technology
+          </h2>
+        </div>
+        <div class="header__hero-img">
+          <img src="./img/head-img.png" height="100%" alt="Main Img" />
+        </div>
+      </div>
     </header>
-    <a href="#header">
-      <div class="button_up">&UpArrow;</div>
-    </a>
-    <main class="main">
-      <div class="main__content">
-        <section>
-          <div class="slideshow-container">
-            <div class="mySlides fade">
-              <img
-                class="slideshow-img"
-                src="img/img1.jpg"
-                width="100%"
-                height="100%"
-              />
-            </div>
-
-            <div class="mySlides fade">
-              <img
-                class="slideshow-img"
-                src="img/img2.jpg"
-                width="100%"
-                height="100%"
-              />
-            </div>
-
-            <div class="mySlides fade">
-              <img
-                class="slideshow-img"
-                src="img/img3.jpg"
-                width="100%"
-                height="100%"
-              />
-            </div>
-
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="dot-collection">
-              <span class="dot" onclick="currentSlide(1)"></span>
-              <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-
-            <div class="slider-banner">
-              <p>Look beyond the ordinary</p>
-            </div>
-            <div class="slider-banner--right"></div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container info">
-            <div class="info_text">
-              <p>
-                Visio is an investment management firm initially founded by
-                Patrice Moyal in 2003. The nimble, highly focused and dynamic
-                team manage assets across listed strategies for a diversified
-                client base that includes some of the world’s largest and most
-                sophisticated investors.
-              </p>
-            </div>
-            <div class="info_logo">
-              <img
-                src="./img/weird-icon-hack.PNG"
-                width="100%"
-                alt="fancy thingy"
-              />
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="badge-collection">
-            <div class="badge-collection__badge">
-              <p class="badge-collection__badge-icon">&gt;</p>
-              <p class="badge-collection__badge-text">THE VISIO DIFFERENCE</p>
-            </div>
-            <div class="badge-collection__badge">
-              <p class="badge-collection__badge-icon">&gt;</p>
-              <p class="badge-collection__badge-text">MEET THE VISIO TEAM</p>
-            </div>
-            <div class="badge-collection__badge">
-              <p class="badge-collection__badge-icon">&gt;</p>
-              <p class="badge-collection__badge-text">
-                OUR FUNDS AND INVESTMENTS
-              </p>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div class="banner-collection">
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">HEDGE FUNDS</div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">unit trusts</div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">
-                SEGREGATED MANDATES
-              </div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">AFRICA FUNDS</div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">FUND PERFORMANCE</div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-            <div class="banner-collection__banner">
-              <div class="banner-collection__banner-text">RISK MANAGEMENT</div>
-              <div class="banner-collection__banner-icon">></div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="footer__copyright">
-        <p id="copy_target">Copyright &copy; Ruben Verster 2021</p>
-      </div>
-    </footer>
-
-    <script src="./js/index.js" defer></script>
-    <script src="./js/img-slider.js" defer></script>
   </body>
 </html>

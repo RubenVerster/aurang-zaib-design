@@ -1,0 +1,42 @@
+.header {
+  background-color: $color-primary;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__hero {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-headings {
+      height: 100%;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      &--primary {
+        letter-spacing: 3px;
+        line-height: 1.1;
+        font-size: 6rem;
+        span {
+          display: block;
+        }
+      }
+      &--secondary {
+        margin-top: 1rem;
+        font-size: 2.5rem;
+      }
+    }
+    &-img {
+      height: 85%;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
