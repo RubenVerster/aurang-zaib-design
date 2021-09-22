@@ -1,9 +1,6 @@
 .u-ml-small {
   margin-left: 2rem; }
 
-.u-ml-poes-big {
-  margin-left: 2rem; }
-
 *,
 *::after,
 *::before {
@@ -105,23 +102,30 @@ a {
       border: 1px solid rgba(51, 51, 51, 0.1);
       color: #008aca; }
 
-.card {
-  width: 50%;
-  background-color: #fff;
-  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100px;
+.slideshow-container {
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  border-radius: 15px;
-  padding: 3rem; }
-  .card_cta {
-    font-size: 2.2rem;
-    font-weight: 800;
-    color: #333; }
+  justify-content: center;
+  margin-top: 7rem; }
+  .slideshow-container .mySlides {
+    display: none;
+    width: 100%; }
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 5rem 2px 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+.active,
+.dot:hover {
+  background-color: #717171; }
 
 .header {
   background-color: #5aa6c8;
@@ -199,7 +203,7 @@ a {
   display: flex;
   justify-content: center;
   background-color: #f5f8fd;
-  margin: 10rem 0; }
+  margin-top: 10rem; }
   .section-mobile__content {
     width: 80%;
     height: 100%;
@@ -237,3 +241,82 @@ a {
     .section-mobile__content img {
       height: 120%;
       transform: translateY(0%); }
+
+.section-reviews {
+  height: 100vh;
+  background-color: #5aa6c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .section-reviews__heading {
+    color: #fff;
+    font-size: 3rem; }
+  .section-reviews-line {
+    width: 125px;
+    border-bottom: 3px solid #008aca;
+    margin: 1rem 0 2rem 0.5rem; }
+  .section-reviews__collection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .section-reviews__collection .review {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%; }
+      .section-reviews__collection .review .review-card {
+        text-align: center;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.5rem; }
+        .section-reviews__collection .review .review-card__thingy-on-top {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -185%);
+          border: 1px solid rgba(153, 153, 153, 0.3);
+          border-radius: 50%;
+          height: 50px;
+          width: 50px;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 4rem; }
+        .section-reviews__collection .review .review-card__text {
+          line-height: 1.7;
+          margin-top: 2rem;
+          font-size: 1.7rem;
+          color: #333;
+          margin-bottom: 1rem; }
+        .section-reviews__collection .review .review-card__person {
+          display: flex;
+          align-items: center;
+          width: 70%;
+          justify-content: space-evenly; }
+          .section-reviews__collection .review .review-card__person-img {
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            .section-reviews__collection .review .review-card__person-img img {
+              width: 50px;
+              height: 50px; }
+          .section-reviews__collection .review .review-card__person-details {
+            margin-left: 1rem;
+            text-align: left; }
+            .section-reviews__collection .review .review-card__person-details-name {
+              color: rgba(0, 0, 0, 0.7);
+              font-size: 1.5rem;
+              font-weight: 900; }
+            .section-reviews__collection .review .review-card__person-details-title {
+              font-size: 1.5rem; }
